@@ -1,0 +1,27 @@
+{
+  "name": "d3-axis-for-react",
+  "version": "1.0.0",
+  "description": "A verbatim d3 axis component for React",
+  "main": "dist/index.js",
+  "author": "Tom MacWright",
+  "license": "MIT",
+  "source": "src/index.tsx",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "umd:main": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "prepare": "npm run build",
+    "release": "standard-version"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0-rc.1",
+    "react-dom": "^16.8.0 || ^17.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@types/d3-axis": "^2.0.0",
+    "@types/react": "^17.0.3",
+    "microbundle": "^0.13.0",
+    "standard-version": "^9.2.0"
+  }
+}
