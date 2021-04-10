@@ -9,6 +9,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "umd:main": "dist/index.umd.js",
+  "files": ["dist"],
   "scripts": {
     "test": "tsc && jest",
     "build": "microbundle  --jsx React.createElement --no-compress",
