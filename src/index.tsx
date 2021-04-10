@@ -132,7 +132,7 @@ export const Axis = <Domain extends AxisDomain>({
   };
 
   return (
-    <>
+    <g>
       {values.map((tick: any, i: number) => (
         <g
           className="tick"
@@ -170,6 +170,6 @@ export const Axis = <Domain extends AxisDomain>({
         fill="transparent"
         d={domainPath}
       />
-    </>
+    </g>
   );
 };
