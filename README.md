@@ -18,6 +18,16 @@ the axis method is a `scale` prop.
 - **Compatible with server-side rendering**: this doesn't use `useEffect` or any
   hooks: instead of using d3 to create DOM, this uses React.
 
+### Installation
+
+This is the `d3-axis-for-react` package on NPM, so:
+
+```sh
+$ yarn add d3-axis-for-react
+# or
+$ npm install d3-axis-for-react
+```
+
 ### Translation example:
 
 Traditional d3 style:
