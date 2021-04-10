@@ -11,7 +11,7 @@
   "umd:main": "dist/index.umd.js",
   "scripts": {
     "test": "tsc && jest",
-    "build": "microbundle",
+    "build": "microbundle  --jsx React.createElement --no-compress",
     "prepare": "npm run build",
     "release": "standard-version"
   },
