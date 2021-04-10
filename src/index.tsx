@@ -1,3 +1,4 @@
+import React from "react";
 import type { AxisScale, AxisDomain } from "d3-axis";
 
 function identity(x: any) {
@@ -28,23 +29,23 @@ export const Axis = <Domain extends AxisDomain>({
   tickSizeInner = 6,
   tickSizeOuter = 6,
   tickPadding = 3,
-  orient,
+  orient = Orient.bottom,
   offset = typeof window !== "undefined" && window.devicePixelRatio > 1
     ? 0
     : 0.5,
 }: {
   scale: AxisScale<Domain>;
   ticks?: any;
-  tickArguments: any[];
-  tickValues: any[] | null;
+  tickArguments?: any[];
+  tickValues?: any[] | null;
   // TODO
   tickFormat?: any;
   tickSize?: number;
-  tickSizeInner: number;
-  tickSizeOuter: number;
-  tickPadding: number;
-  offset: number;
-  orient: Orient;
+  tickSizeInner?: number;
+  tickSizeOuter?: number;
+  tickPadding?: number;
+  offset?: number;
+  orient?: Orient;
 }) => {
   if (tickSize) {
     tickSizeInner = tickSize;
@@ -132,8 +133,12 @@ export const Axis = <Domain extends AxisDomain>({
 
   return (
     <>
-      {values.map((tick: any) => (
-        <g className="tick" transform={transform(position(tick) + offset)}>
+      {values.map((tick: any, i: number) => (
+        <g
+          className="tick"
+          key={i}
+          transform={transform(position(tick) + offset)}
+        >
           <line stroke="currentColor" {...lineProps} />
           <text
             fill="currentColor"
