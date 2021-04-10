@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import type { AxisScale, AxisDomain } from "d3-axis";
 
 function identity(x: any) {
@@ -36,15 +35,15 @@ export const Axis = <Domain extends AxisDomain>({
 }: {
   scale: AxisScale<Domain>;
   ticks?: any;
-  tickArguments?: any[];
-  tickValues?: any[];
+  tickArguments: any[];
+  tickValues: any[] | null;
   // TODO
   tickFormat?: any;
   tickSize?: number;
-  tickSizeInner?: number;
-  tickSizeOuter?: number;
-  tickPadding?: number;
-  offset?: number;
+  tickSizeInner: number;
+  tickSizeOuter: number;
+  tickPadding: number;
+  offset: number;
   orient: Orient;
 }) => {
   if (tickSize) {
@@ -53,14 +52,23 @@ export const Axis = <Domain extends AxisDomain>({
   }
 
   function number(scale: AxisScale<Domain>) {
-    return (d: any) => +scale(d);
+    return (d: any) => {
+      const value = scale(d);
+      return value === undefined ? 0 : +value;
+    };
   }
 
   function center(scale: AxisScale<Domain>, offset: number) {
-    offset = Math.max(0, scale.bandwidth() - offset * 2) / 2;
+    if (scale.bandwidth) {
+      offset = Math.max(0, scale.bandwidth() - offset * 2) / 2;
+    }
     if ((scale as any).round()) offset = Math.round(offset);
-    return (d: Domain) => +scale(d) + offset;
+    return (d: Domain) => {
+      const value = scale(d);
+      return value === undefined ? 0 : value + offset;
+    };
   }
+
   const k = orient === Orient.top || orient === Orient.left ? -1 : 1,
     x = orient === Orient.left || orient === Orient.right ? "x" : "y",
     transform =

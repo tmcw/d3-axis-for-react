@@ -1,4 +1,4 @@
-# d3-axis for React
+# d3-axis-for-react
 
 Using d3 to build charts in React is mostly a wonderful experience. But
 it's hard to use `d3-axis` in that system: it internally uses d3's selection
@@ -28,3 +28,9 @@ With d3-axis-for-react
   ticks={d3.timeMonth.every(3)}
   tickFormat={d => d <= d3.timeYear(d) ? d.getFullYear() : null} />
 ```
+
+---
+
+Development supported by [Earthrise Media](https://www.earthgenome.org/earthrise/).
+Adapted from [d3-axis](https://github.com/d3/d3-axis), written by Mike Bostock,
+licensed MIT.

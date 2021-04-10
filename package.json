@@ -10,6 +10,7 @@
   "types": "dist/index.d.ts",
   "umd:main": "dist/index.umd.js",
   "scripts": {
+    "test": "tsc",
     "build": "microbundle",
     "prepare": "npm run build",
     "release": "standard-version"
@@ -21,7 +22,9 @@
   "devDependencies": {
     "@types/d3-axis": "^2.0.0",
     "@types/react": "^17.0.3",
+    "eslint": "^7.24.0",
     "microbundle": "^0.13.0",
-    "standard-version": "^9.2.0"
+    "standard-version": "^9.2.0",
+    "typescript": "^4.2.4"
   }
 }
