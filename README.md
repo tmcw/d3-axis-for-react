@@ -16,7 +16,7 @@ the axis method is a `scale` prop.
   out of scope.
 - **TypeScript included**: written in TypeScript, includes types.
 
-### Examples
+### Translation example:
 
 Traditional d3 style:
 
@@ -33,6 +33,22 @@ With d3-axis-for-react
   scale={x}
   ticks={d3.timeMonth.every(3)}
   tickFormat={d => d <= d3.timeYear(d) ? d.getFullYear() : null} />
+```
+
+### Examples
+
+- [Line chart example on CodeSandbox](https://codesandbox.io/s/d3-axis-for-react-line-chart-example-dnbwd)
+
+### API
+
+```js
+import { Axis, Orient } from "d3-axis-for-react";
+
+// Orient is an enum that you provide to the orient=
+// prop, like:
+<Axis
+  scale={x}
+  orient={Orient.left} />
 ```
 
 ---
