@@ -15,6 +15,8 @@ the axis method is a `scale` prop.
 - **No animation**: d3's axis system supports transitioning. This does not: that's
   out of scope.
 - **TypeScript included**: written in TypeScript, includes types.
+- **Compatible with server-side rendering**: this doesn't use `useEffect` or any
+  hooks: instead of using d3 to create DOM, this uses React.
 
 ### Translation example:
 
