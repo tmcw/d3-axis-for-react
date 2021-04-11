@@ -16,7 +16,7 @@ d3-axis-for-react
 
 ### Axis
 
-▸ `Const`**Axis**<Domain\>(`__namedParameters`: { `offset?`: *number* ; `orient?`: [*Orient*](enums/orient.md) ; `scale`: *AxisScale*<Domain\> ; `tickArguments?`: *any*[] ; `tickFormat?`: *any* ; `tickPadding?`: *number* ; `tickSize?`: *number* ; `tickSizeInner?`: *number* ; `tickSizeOuter?`: *number* ; `tickValues?`: *null* \| *any*[] ; `ticks?`: *any*  }): *Element*
+▸ `Const`**Axis**<Domain\>(`__namedParameters`: { `offset?`: *number* ; `orient?`: [*Orient*](enums/orient.md) ; `scale`: *AxisScale*<Domain\> ; `tickArguments?`: *any*[] ; `tickFormat?`: *any* ; `tickPadding?`: *number* ; `tickSize?`: *number* ; `tickSizeInner?`: *number* ; `tickSizeOuter?`: *number* ; `tickValues?`: *null* \| *any*[] ; `ticks?`: *any*[]  }): *Element*
 
 The axis component. This renders an axis, within a
 `g` element, for use in a chart.
@@ -42,8 +42,8 @@ Name | Type | Description |
 `__namedParameters.tickSizeInner?` | *number* | - |
 `__namedParameters.tickSizeOuter?` | *number* | - |
 `__namedParameters.tickValues?` | *null* \| *any*[] | - |
-`__namedParameters.ticks?` | *any* | - |
+`__namedParameters.ticks?` | *any*[] | - |
 
 **Returns:** *Element*
 
-Defined in: [index.tsx:33](https://github.com/tmcw/d3-axis-for-react/blob/5f0ebfb/src/index.tsx#L33)
+Defined in: [index.tsx:33](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L33)

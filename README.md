@@ -14,6 +14,8 @@ the axis method is a `scale` prop.
 - **No new opinions**: Same API as d3, just with props instead of methods.
 - **No animation**: d3's axis system supports transitioning. This does not: that's
   out of scope.
+- **No canvas**: d3-axis is compatible with Canvas thanks to d3's selection/context
+  system. This component only targets SVG.
 - **TypeScript included**: written in TypeScript, includes types.
 - **Compatible with server-side rendering**: this doesn't use `useEffect` or any
   hooks: instead of using d3 to create DOM, this uses React.
