@@ -5,6 +5,12 @@ function identity(x: any) {
   return x;
 }
 
+/**
+ * Instead of a component for each orientation (like AxisLeft, AxisRight),
+ * we provide a value from this Orient object. Provide a value, like
+ * Orient.left, to the `orient` prop of the Axis component
+ * to place the axis on the left.
+ */
 export enum Orient {
   top = 1,
   right = 2,
@@ -20,6 +26,10 @@ function translateY(y: number) {
   return "translate(0," + y + ")";
 }
 
+/**
+ * The axis component. This renders an axis, within a
+ * `g` element, for use in a chart.
+ */
 export const Axis = <Domain extends AxisDomain>({
   scale,
   ticks,
@@ -35,11 +45,11 @@ export const Axis = <Domain extends AxisDomain>({
     ? 0
     : 0.5,
 }: {
+  /** An initialized d3 scale object, like a d3.linearScale */
   scale: AxisScale<Domain>;
-  ticks?: any;
+  ticks?: any[];
   tickArguments?: any[];
   tickValues?: any[] | null;
-  // TODO
   tickFormat?: any;
   tickSize?: number;
   tickSizeInner?: number;
@@ -91,7 +101,7 @@ export const Axis = <Domain extends AxisDomain>({
         : tickValues,
     format =
       tickFormat == null
-        ? (scale as any).tickFormat
+        ? "tickFormat" in scale
           ? (scale as any).tickFormat.apply(scale, tickArguments)
           : identity
         : tickFormat,

@@ -52,17 +52,7 @@ With d3-axis-for-react
 - [Line chart](https://codesandbox.io/s/d3-axis-for-react-line-chart-example-dnbwd)
 - [Index chart](https://codesandbox.io/s/d3-axis-for-react-index-chart-example-v0pe0)
 
-### API
-
-```js
-import { Axis, Orient } from "d3-axis-for-react";
-
-// Orient is an enum that you provide to the orient=
-// prop, like:
-<Axis
-  scale={x}
-  orient={Orient.left} />
-```
+### [📚 API documentation](./docs/README.md)
 
 ---
 
