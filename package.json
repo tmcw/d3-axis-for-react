@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "test": "tsc && jest",
-    "build": "microbundle  --jsx React.createElement --no-compress",
+    "build": "microbundle  --jsx React.createElement --no-compress && npm run doc",
     "doc": "typedoc --plugin typedoc-plugin-markdown --readme none src/index.tsx",
     "prepare": "npm run build",
     "release": "standard-version"
