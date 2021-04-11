@@ -49,7 +49,8 @@ With d3-axis-for-react
 
 ### Examples
 
-- [Line chart example on CodeSandbox](https://codesandbox.io/s/d3-axis-for-react-line-chart-example-dnbwd)
+- [Line chart](https://codesandbox.io/s/d3-axis-for-react-line-chart-example-dnbwd)
+- [Index chart](https://codesandbox.io/s/d3-axis-for-react-index-chart-example-v0pe0)
 
 ### API
 
