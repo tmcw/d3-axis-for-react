@@ -22,6 +22,7 @@ function translateY(y: number) {
 
 export const Axis = <Domain extends AxisDomain>({
   scale,
+  ticks,
   tickArguments = [],
   tickValues = null,
   tickFormat = null,
@@ -50,6 +51,10 @@ export const Axis = <Domain extends AxisDomain>({
   if (tickSize) {
     tickSizeInner = tickSize;
     tickSizeOuter = tickSize;
+  }
+
+  if (ticks) {
+    tickArguments = ticks;
   }
 
   function number(scale: AxisScale<Domain>) {
