@@ -46,4 +46,4 @@ Name | Type | Description |
 
 **Returns:** *Element*
 
-Defined in: [index.tsx:33](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L33)
+Defined in: [index.tsx:33](https://github.com/tmcw/d3-axis-for-react/blob/f5cae69/src/index.tsx#L33)

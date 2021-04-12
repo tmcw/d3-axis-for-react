@@ -22,7 +22,7 @@ to place the axis on the left.
 
 • **bottom**: = 3
 
-Defined in: [index.tsx:17](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L17)
+Defined in: [index.tsx:17](https://github.com/tmcw/d3-axis-for-react/blob/f5cae69/src/index.tsx#L17)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **left**: = 4
 
-Defined in: [index.tsx:18](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L18)
+Defined in: [index.tsx:18](https://github.com/tmcw/d3-axis-for-react/blob/f5cae69/src/index.tsx#L18)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **right**: = 2
 
-Defined in: [index.tsx:16](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L16)
+Defined in: [index.tsx:16](https://github.com/tmcw/d3-axis-for-react/blob/f5cae69/src/index.tsx#L16)
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 • **top**: = 1
 
-Defined in: [index.tsx:15](https://github.com/tmcw/d3-axis-for-react/blob/70a5c25/src/index.tsx#L15)
+Defined in: [index.tsx:15](https://github.com/tmcw/d3-axis-for-react/blob/f5cae69/src/index.tsx#L15)
