@@ -6,7 +6,7 @@
   "author": "Tom MacWright",
   "license": "MIT",
   "source": "src/index.tsx",
-  "module": "dist/index.js",
+  "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "umd:main": "dist/index.umd.js",
   "files": [
