@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/tmcw/d3-axis-for-react/compare/v1.0.1...v1.0.2) (2021-04-12)
+
+
+### Bug Fixes
+
+* Module entry point duplicated cjs ([#9](https://github.com/tmcw/d3-axis-for-react/issues/9)) ([b291963](https://github.com/tmcw/d3-axis-for-react/commit/b2919633ed1c1dd30b7a69918ec09e7c59d3a527))
+
 ### [1.0.1](https://github.com/tmcw/d3-axis-for-react/compare/v1.0.1-alpha.1...v1.0.1) (2021-04-11)
 
 ### [1.0.1-alpha.1](https://github.com/tmcw/d3-axis-for-react/compare/v1.0.1-alpha.0...v1.0.1-alpha.1) (2021-04-10)
