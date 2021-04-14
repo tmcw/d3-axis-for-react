@@ -40,6 +40,9 @@ export const Axis = <Domain extends AxisDomain>({
   tickSizeInner = 6,
   tickSizeOuter = 6,
   tickPadding = 3,
+  tickTextProps = {},
+  tickLineProps = {},
+  domainPathProps = {},
   orient = Orient.bottom,
   offset = typeof window !== "undefined" && window.devicePixelRatio > 1
     ? 0
@@ -55,6 +58,12 @@ export const Axis = <Domain extends AxisDomain>({
   tickSizeInner?: number;
   tickSizeOuter?: number;
   tickPadding?: number;
+  /** Additional attributes to add to tick text elements, or null to omit */
+  tickTextProps?: React.SVGProps<SVGTextElement> | null;
+  /** Additional attributes to add to tick line elements, or null to omit */
+  tickLineProps?: React.SVGProps<SVGLineElement> | null;
+  /** Additional attributes to the domain path, or null to omit */
+  domainPathProps?: React.SVGProps<SVGPathElement> | null;
   offset?: number;
   orient?: Orient;
 }) => {
@@ -154,37 +163,45 @@ export const Axis = <Domain extends AxisDomain>({
           key={i}
           transform={transform(position(tick) + offset)}
         >
-          <line stroke="currentColor" {...lineProps} />
-          <text
-            fill="currentColor"
-            {...textProps}
-            dy={
-              orient === Orient.top
-                ? "0em"
-                : orient === Orient.bottom
-                ? "0.71em"
-                : "0.32em"
-            }
-            fontSize="10"
-            fontFamily="sans-serif"
-            textAnchor={
-              orient === Orient.right
-                ? "start"
-                : orient === Orient.left
-                ? "end"
-                : "middle"
-            }
-          >
-            {format(tick)}
-          </text>
+          {tickLineProps && (
+            <line stroke="currentColor" {...lineProps} {...tickLineProps} />
+          )}
+          {tickTextProps && (
+            <text
+              fill="currentColor"
+              dy={
+                orient === Orient.top
+                  ? "0em"
+                  : orient === Orient.bottom
+                  ? "0.71em"
+                  : "0.32em"
+              }
+              fontSize="10"
+              fontFamily="sans-serif"
+              textAnchor={
+                orient === Orient.right
+                  ? "start"
+                  : orient === Orient.left
+                  ? "end"
+                  : "middle"
+              }
+              {...textProps}
+              {...tickTextProps}
+            >
+              {format(tick)}
+            </text>
+          )}
         </g>
       ))}
-      <path
-        className="domain"
-        stroke="currentColor"
-        fill="transparent"
-        d={domainPath}
-      />
+      {domainPathProps && (
+        <path
+          className="domain"
+          stroke="currentColor"
+          fill="transparent"
+          d={domainPath}
+          {...domainPathProps}
+        />
+      )}
     </g>
   );
 };
