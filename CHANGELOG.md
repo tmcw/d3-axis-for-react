@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/tmcw/d3-axis-for-react/compare/v1.0.2...v1.1.0) (2021-04-14)
+
+
+### Features
+
+* Allow custom props for tick and domain elements ([#10](https://github.com/tmcw/d3-axis-for-react/issues/10)) ([8238579](https://github.com/tmcw/d3-axis-for-react/commit/82385790f7d41487d6b93ca927b52bfaed1f8561))
+
 ### [1.0.2](https://github.com/tmcw/d3-axis-for-react/compare/v1.0.1...v1.0.2) (2021-04-12)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "d3-axis-for-react",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A verbatim d3 axis component for React",
   "main": "dist/index.js",
   "author": "Tom MacWright",
