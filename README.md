@@ -53,6 +53,7 @@ With d3-axis-for-react
 
 - [Line chart](https://codesandbox.io/s/d3-axis-for-react-line-chart-example-dnbwd)
 - [Index chart](https://codesandbox.io/s/d3-axis-for-react-index-chart-example-v0pe0)
+- [Bar chart](https://codesandbox.io/s/bar-chart-example-d1j5e)
 
 ### [📚 API documentation](./docs/README.md)
 
