@@ -9,41 +9,49 @@ to place the axis on the left.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
-- [bottom](orient.md#bottom)
-- [left](orient.md#left)
-- [right](orient.md#right)
-- [top](orient.md#top)
+- [bottom](Orient.md#bottom)
+- [left](Orient.md#left)
+- [right](Orient.md#right)
+- [top](Orient.md#top)
 
-## Enumeration members
+## Enumeration Members
 
 ### bottom
 
-• **bottom**: = 3
+• **bottom** = ``3``
 
-Defined in: [index.tsx:17](https://github.com/tmcw/d3-axis-for-react/blob/c9e22a5/src/index.tsx#L17)
+#### Defined in
+
+[index.tsx:17](https://github.com/tmcw/d3-axis-for-react/blob/7123c8d/src/index.tsx#L17)
 
 ___
 
 ### left
 
-• **left**: = 4
+• **left** = ``4``
 
-Defined in: [index.tsx:18](https://github.com/tmcw/d3-axis-for-react/blob/c9e22a5/src/index.tsx#L18)
+#### Defined in
+
+[index.tsx:18](https://github.com/tmcw/d3-axis-for-react/blob/7123c8d/src/index.tsx#L18)
 
 ___
 
 ### right
 
-• **right**: = 2
+• **right** = ``2``
 
-Defined in: [index.tsx:16](https://github.com/tmcw/d3-axis-for-react/blob/c9e22a5/src/index.tsx#L16)
+#### Defined in
+
+[index.tsx:16](https://github.com/tmcw/d3-axis-for-react/blob/7123c8d/src/index.tsx#L16)
 
 ___
 
 ### top
 
-• **top**: = 1
+• **top** = ``1``
 
-Defined in: [index.tsx:15](https://github.com/tmcw/d3-axis-for-react/blob/c9e22a5/src/index.tsx#L15)
+#### Defined in
+
+[index.tsx:15](https://github.com/tmcw/d3-axis-for-react/blob/7123c8d/src/index.tsx#L15)
