@@ -2,6 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { Axis, Orient } from "../src/index";
 import { scaleLinear } from "d3";
+import { test, expect } from "vitest";
 
 test("axis with default options", async () => {
   const scale = scaleLinear().domain([0, 1]).range([0, 1]);
